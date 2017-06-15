@@ -1,43 +1,39 @@
 
-
-
-
  // This code will run as soon as the page loads
  window.onload = function() {
-   $("#secondsleft").append("vanessa");
+   
+  stopwatch.start();
   
    $("#reset").on("click", stopwatch.reset);
-   $("#start").on("click", stopwatch.start);
+  
  };
  
  //  Variable that will hold our setInterval that runs the stopwatch
  var intervalId;
  
   
- // Our stopwatch object
+ // Our stopwatch object is identified as an object because of the {}.
  var stopwatch = {
  
-   time: 90,
+   time: 5,
     
    reset: function() {
  
      stopwatch.time = 0;
      
- 
      // DONE: Change the "display" div to "00:00."
      $("#display").html("00:00");
  
-     // DONE: Empty the "laps" div.
-     $("#laps").html("");
+     
    },
+
    start: function() {
  
      // DONE: Use setInterval to start the count here and set the clock to running.
        
          intervalId = setInterval(stopwatch.count, 1000);
          
-     
-   },
+     },
 
    stop: function() {
  
@@ -57,7 +53,15 @@
      console.log(converted);
  
      // DONE: Use the variable we just created to show the converted time in the "display" div.
-     $("#display").html(converted);
+     // When selecting an id or class in the html, we repersent an id using a # and a class using a .
+     $("#secondsleft").html(converted);
+
+	if (stopwatch.time == 0) {
+
+		stopwatch.stop();
+   }
+
+
    },
    timeConverter: function(t) {
  
