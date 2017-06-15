@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
+  margin-bottom: 25px;
+
+}
+
+
+
+.panel-body{
+	text-align: center;
+	background-color: yellow;
+	font-size: 20px;
+	border: 2px solid black;
+	padding: 30px;
+	/*margin-bottom: 10px;*/
+}
+
+.outer-body {
+background-image: url("../images/vladstudio_symbols_color3_1024x768_signed.jpg");
+
+}
+
+.blue {
+	color: #0000FF;
+	
+}
+
