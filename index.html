@@ -11,7 +11,7 @@
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="assets/javascript/app.js"></script>
 
-<style> 
+<!-- <style> 
     .container {
       border: 1px solid purple;
     }
@@ -21,18 +21,16 @@
     .row div {
       border: 1px solid red;
       padding: 2em;
-  }   </style> 
-
-
+  	}   </style>  -->
 
 
 </head>
+
 <body>
 
-<div class="outer-body"> 
-
-	<div class="container">
-
+		<div class="outer-body"> 
+		
+			 <div class="container"> 
 		
 			    <div class="row">
 
@@ -48,22 +46,107 @@
 						
 			    	  </div>
 
-			    	  <div class="row">
+ 					
+			    	  <div class="row">	 
+
+			    	  <div class="main-content">		    	  
 
 			    	  
+					<form  id="form1" action=" ">
+					<p>Who is the oldest brother?</p>
+					<ul>
+					 
+					<label>
+						<input type="radio" name="firstquestion" value="20" /> 
+						<span>Greg</span>
+					</label>
+
+					<label>
+						<input type="radio" name="firstquestion" value="0" /> 
+						<span>Mikey</span>
+					</label>
 
 
+					<input type="radio" name="firstquestion" value="25" /> Gary
+
+
+					<input type="radio" name="firstquestion" value="0" /> Robert
+
+
+					</ul>
+
+					<br>
+
+					<p>Who always says "Marsha, Marsha, Marsha"?</p>
+					<ul>
+					<input type="radio" name="secondquestion" value="0" /> Alice
+					<input type="radio" name="secondquestion" value="0" /> Cindy
+					<input type="radio" name="secondquestion" value="0" /> Peter
+					<input type="radio" name="secondquestion" value="20" /> Jan
+					</ul>
+
+					<br>
+
+					<p>Who broke Marsha's nose?</p>
+					<ul>
+					<input type="radio" name="thirdquestion" value="0" /> Greg
+					<input type="radio" name="thirdquestion" value="0" /> Bobby
+					<input type="radio" name="thirdquestion" value="20" /> Peter
+					<input type="radio" name="thirdquestion" value="0" /> Jan
+					</ul>
+
+					<br>
+
+					<p>Who is the maid?</p>
+					<ul>
+					<input type="radio" name="fourthquestion" value="0" /> Betty Crocker
+					<input type="radio" name="fourthquestion" value="20" /> Alice
+					<input type="radio" name="fourthquestion" value="0" /> June
+					<input type="radio" name="fourthquestion" value="0" /> Gertrude
+					</ul>
+
+					<br>
+
+					<!-- <p>How many children did Alice have?</p>
+					<input type="radio" name="fifthquestion" value="0" />1<br />
+					<input type="radio" name="fifthquestion" value="0" />2<br />
+					<input type="radio" name="fifthquestion" value="0" />3<br />
+					<input type="radio" name="fifthquestion" value="20" />0<br /> -->
+
+					<p>How many children did Alice have?</p>
+					<ul>
+					<input type="radio" name="fifthquestion" value="0" /> 1 
+					<input type="radio" name="fifthquestion" value="0" /> 2 
+					<input type="radio" name="fifthquestion" value="0" /> 3 
+					<input type="radio" name="fifthquestion" value="20" /> 0 
+					</ul>
+
+					<br>
+
+
+					<input type="submit" value="Submit">
+					</form>
+
+						</div>
 
 			    	  </div>
+
+			    	  	<div>
+
+			    	  	<br>
+
+						<p>Your score is: <span id="grade">__</span></p>
+						<p id="grade"></p>
+						<p id="grade2"></p>
+						</div>
 
 
 
 			    	</div>
 				  </div>
 				</div>
-		  			
-		 </div> 
-	</div>
+		  	  </div> 
+		  	</div>
 
 
 
