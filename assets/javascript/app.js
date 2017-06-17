@@ -30,7 +30,7 @@ if (result == 20) {result2 = "You need to spend more time watching the Brady Bun
 if (result == 40) {result2 = "I think you should watch some Brady Bunch reruns. <br> Try again."};
 if (result == 60) {result2 = "I think you did watch the Brady Bunch, but could do better. <br> Try again."};
 if (result == 80) {result2 = "So close. Try again."};
-if (result == 100) {result2 = "Excellent! You're a Brady Bunch fan!"};
+if (result == 100) {result2 = "Excellent! You're a true Brady Bunch fan!"};
 document.getElementById("grade2").innerHTML = result2; 
 
 
