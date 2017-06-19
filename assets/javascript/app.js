@@ -6,7 +6,7 @@
   
    $("#reset").on("click", counter.reset);
 
-
+   $("#playagain").hide();
 
 
 	 document.getElementById("form1").onsubmit=function(event) {
@@ -30,14 +30,15 @@ if (result == 20) {result2 = "You need to spend more time watching the Brady Bun
 if (result == 40) {result2 = "I think you should watch some Brady Bunch reruns. <br> Try again."};
 if (result == 60) {result2 = "I think you did watch the Brady Bunch, but could do better. <br> Try again."};
 if (result == 80) {result2 = "So close. Try again."};
-if (result == 100) {result2 = "Excellent! You're a true Brady Bunch fan!"};
+if (result == 100) {result2 = "Excellent! You're a true Brady Bunch fan! <br> Try again."};
 document.getElementById("grade2").innerHTML = result2; 
 
 
+$("#playagain").show();
 
 return false; // required to not refresh the page; just leave this here
 } //this ends the submit function
-
+  
 
 
  
